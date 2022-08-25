@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* @font-face {
+@font-face {
     font-family: Helvetica;
     src: url(/fonts/Helvetica.ttf);
 }
@@ -11,7 +11,7 @@
 @font-face{
     font-family: HelveticaLight;
     src: url(/fonts/helvetica-light.ttf)
-} */
+}
 
 
 .globalContainer{
@@ -78,6 +78,47 @@ body{
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
     width: 396px;
     height: 349px;
+}
+
+.form{
+    text-align: center;
+}
+
+.email{
+    display: inline-block;
+    /* background-color: grey; */
+    width: 364px;
+    height: 51.6px;
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.emailBox{
+    width: 330px;
+    color:#1d2129 ;
+    font-size: 17px;
+    
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.passwordContainer{
+    display: inline-block;
+    width: 364px;
+    height: 51.6px;
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.passwordBox{
+    width: 330px;
+    border: 1px solid #dddfe2;
+    padding: 14px 16px;
+    font-size: 17px;
+    border-radius: 6px;
 }
 
 .footer{
