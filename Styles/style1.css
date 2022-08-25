@@ -87,6 +87,7 @@ body{
 .email{
     display: inline-block;
     /* background-color: grey; */
+    caret-color: #1877f2;
     width: 364px;
     height: 51.6px;
     margin: auto;
@@ -98,7 +99,10 @@ body{
     width: 330px;
     color:#1d2129 ;
     font-size: 17px;
-    
+    caret-color: #1877f2;
+    outline-color:#1877f2; 
+    box-shadow: 0 0 ;
+    /*#e7f3ff*/
     padding: 14px 16px;
     border: 1px solid #dddfe2;
     border-radius: 6px;
@@ -115,6 +119,7 @@ body{
 
 .passwordBox{
     width: 330px;
+    caret-color: #1877f2;
     border: 1px solid #dddfe2;
     padding: 14px 16px;
     font-size: 17px;
