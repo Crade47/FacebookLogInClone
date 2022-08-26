@@ -18,52 +18,58 @@
     
     background-color: #f0f2f5;
     height: 720px;
+    padding: 60px;
 
 }
-
-body{
-    line-height: 1.34;
-}
-
 .boxOuter{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: lightpink;
-    margin-top: 20px;
+   
+    /* background-color: lightpink; */
+    width: 980px;
     height: 536px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .box1{
-    background-color: red;
-    height: 20vh;
-    width: 50vh;
-    margin-right: 15vw;
-    margin-left: 15vw;
-    
+    box-sizing: border-box;
+    display: inline-block;
+    /* background-color: red; */
+    /* margin-left: 200px; */
+
+    height: 265px;
+    width: 580px;    
 }
 .heading{
     /* margin-top: -3vh; */
-    background-color: orange;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2vh;
-    margin-top: -2vh;
-    width: 55vh;
+    /* background-color: orange; */
+    font-family: HelveticaLight, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    width: 500px;
     font-weight: 400;
+    text-align: left;
+    margin-top: 30px;
 }
 
-
+.logo{
+    width: 548px;
+    height: 181px;
+    margin-bottom: 20px;
+    margin-left: -28px;
+}
 .box1 img{
+    padding: 112px 0 16px;
     height: 106px;
     width: 301px;
-    margin-top: -3vh;
-    margin-left: -3.5vh;
+    
 }
 
 .box2{
-    background-color: green;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align:top;
+    /* background-color: green; */
     height: 496px;
     width: 396px;
     
@@ -77,7 +83,7 @@ body{
     border-radius: 8px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
     width: 396px;
-    height: 349px;
+    height: 310px;
 }
 
 .form{
@@ -87,7 +93,7 @@ body{
 .email{
     display: inline-block;
     /* background-color: grey; */
-    caret-color: #1877f2;
+ 
     width: 364px;
     height: 51.6px;
     margin: auto;
@@ -101,8 +107,6 @@ body{
     font-size: 17px;
     caret-color: #1877f2;
     outline-color:#1877f2; 
-    box-shadow: 0 0 ;
-    /*#e7f3ff*/
     padding: 14px 16px;
     border: 1px solid #dddfe2;
     border-radius: 6px;
@@ -120,29 +124,203 @@ body{
 .passwordBox{
     width: 330px;
     caret-color: #1877f2;
+    outline-color:#1877f2; 
     border: 1px solid #dddfe2;
     padding: 14px 16px;
     font-size: 17px;
     border-radius: 6px;
 }
 
-.footer{
-    border: 4px solid red;
-    background-color: #fff;
-    height: 20vh;
-    width: 100%;
+.button{
+    width: 364px;
+    margin: auto;
+    padding-top: 6px;
+    /* padding: 14px 16px; */
+}
+
+.button button:hover{
+    background-color: #166fe5;
+}
+
+.button button:active{
+    background-color: grey;
+    box-shadow: 0px 0px 0px 3px rgb(99, 97, 97);
+}
+
+.logInButton{
+    width: 364px;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 1100;
+    background-color: #1877f2;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+}
+
+.forgotPass{
+    margin-top: 12px;
+}
+
+.forgotPass a{
+    color: #1877f2;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.forgotPass a:hover{
+    text-decoration: underline;
+}   
+
+.line{
+    background-color: #dadde1;
+    height: 0.4px;
+    width: 364px;
+    margin: 24px auto;
     
 }
 
-@media only screen and (max-width: 900px){
+.newAccount{
+    width: 396px;
+    height: 54px;
+    margin-top: 12px;
+}
+
+.newAccount button{
+    height: 48px;
+    padding: 14px 16px;
+    font-size: 18px;
+    background-color: #3fb227;
+    color: #fcfefe;
+    border: none;
+    border-radius: 6px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.newAccount button:hover{
+    background-color: #36a420;
+}
+
+.newAccount button:active{
+    background-color: lightgreen;
+}
+
+#createPage{
+    width: 396px;
+    height: 20px;
+    /* background-color: beige; */
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#createPage a{
+    color: #1d2129;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#createPage a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    /* border: 4px solid red; */
+    background-color: #fff;
+    padding-top: 20px;
+    height: 156px;
+    width: 100%;
     
+} 
+
+#pageFooter{
+    background-color: skyblue;
+    height: 136.733px;
+    margin: 0 40px;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+    
+    .boxOuter{
+        width: 100%;
+    }
+
+    .box1{
+        width: 400px;
+        margin-right: 32px;
+        
+    }
+
+    .box2{
+        vertical-align: right;
+        float: right;
+    }
+    
+    .heading{
+        font-size: 16px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 948px){
+    
+    .boxOuter{
+        display: flex;
+        float: none;
+        flex-wrap: wrap;
+        margin-right: 0 40px;
+    }
     .box1{
         text-align: center;
+        margin: auto;
+        width: 400px;
+        height: 130px;
+       
+    }
+
+    .box1 img{
+        margin-right: -40px;
+        padding: 0;
     }
 
     .heading{
-        margin-top: 0.5vh;
-        width: auto;
-        font-size: 1.5vh;
+        text-align: center;
+        font-size: 16px;
+        line-height: 25px;
+        
+    }
+
+    .logo{
+        width: 400px;
+        height: 73.65px;
+    }
+
+    .box2{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .footer{
+        padding-top: 20px;
+        height: 155px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    
+}
+
+@media only screen and (max-width: 620px){
+    .footer{
+        height: 211px;
     }
 }
