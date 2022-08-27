@@ -325,12 +325,13 @@
 
 #credit{
     display: block;
+    margin: 16px 0 0;
 }
 
 #credit p{
     font-size: 18px;
     vertical-align: middle;
-    margin: 16px 0 0;
+    
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 }
@@ -439,6 +440,11 @@
     }
 }
 
+@media only screen and (max-width: 575px){
+    #pageFooterChildren{
+        display: none;
+    }
+}
 @media only screen and (max-width: 535px){
     #pageFooter{
         height: 191.217px;
@@ -448,8 +454,12 @@
     .lang{
         height: 35.6px;
     }
+    
+}
 
-    #pageFooterChildren{
-        height: 96px;
-    }
+
+@media only screen and (max-width: 450px){
+        .footer{
+            margin-left: 60px;
+        }
 }
